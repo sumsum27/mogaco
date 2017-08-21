@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    min-height: 768px;
+    background: #343434;
+    z-index: 9999;
+    background-color: #f99393;
+}
+
+#frame{float: right; width:1300px; height:100%; background-color: #f2f2f2;}
