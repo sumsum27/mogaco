@@ -31,64 +31,124 @@
 	
 	    <!-- 상단 로고 -->
 	    <div id=logo>
-	    	<img alt="" src="">
+	    	<a href="/mogaco/">
+	    		<img src="common/image/logo.png" alt="Logo">
+	    	</a>
 	    </div>
 	    
+	    <!-- 상단 링크 -->
+	    
+	    <ul class="topLink">
+	    	<li>
+				<a href="">메일보내기</a>	    	
+	    	</li>
+	     	<li>
+				<a href="">1:1문의</a>	    	
+	    	</li>
+	    </ul>
+	    
 	    <!-- 카테고리 -->
-	    <div id=category>
-	    	
-			<div id="info">
-			
-				<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;"> 안내 </span>
+	    <ul class="category">
+	    
+	    	<li id="info">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">모각코 알파팀 소개 </span>
 				
-				<a href="">관련링크,문의처</a>
-			</div>
-			
-			<div id="before">
-				<a href="">이번주 모임안내 </a>
-		
-			</div>
-			
-			<div id="after">
-				<a href="">모임 후기 </a>
-			</div>
-			
-			<div id="reveiw">
-				<a href="">개인 리뷰 </a>
-			</div>
-			
-			<div id="daily">
-				<a href="">데일리 목표 </a>
-			</div>
-		
-			<div id="share">
-				<a href="">공유행사 </a>
-				<a href="">참여후기 </a>
-				<a href="">공유자료 </a>
-			</div>
-			
-			<div id="free">
-				<a href="">게시판 </a>
-			</div>
-		
+				<%-- <ul>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">안내 </span>
+					</li>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">관련링크, 문의처 </span>
+					</li>
+				</ul> --%>	
+	    	</li>
+	    
+	    	<li id="before">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">이번주 모임 안내 </span>
+			</li>
+	    	
+	    	<li id="after">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">모임 후기 </span>
+			</li>	    	
+	    	
+
+	    	<li id="reveiw">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">개인 리뷰 </span>
+				
+				<%-- <ul>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">개인리뷰 </span>
+					</li>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">목표 </span>
+					</li>
+				</ul>	 --%>
+	    	</li>
+	    	
+	    	<li id="daily">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">데일리</span>
+				
+				<%-- <ul>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">안내 </span>
+					</li>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">관련링크, 문의처 </span>
+					</li>
+				</ul> --%>	
+	    	</li>	
+	    	
+	        <li id="share">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">공유 행사 </span>
+				
+				<%-- <ul>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">공유행사 </span>
+					</li>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">참여후기 </span>
+					</li>
+					<li>
+						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">공유자료 </span>
+					</li>
+				</ul> --%>	
+	    	</li>	
+	    	
+	    	<li id="free">
+	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">게시판 </span>
+	    	</li>	    	
+	    		   		    
+	    </ul>
+	    
+	    <div id="copyright">
+	    	<img src="common/image/copyright.png" alt="Logo">
 	    </div>
 	
 	</div>
 
 	<!-- 컨텐츠 -->
 	<div id="container">
+		<img id="team" alt="" src="common/image/team.jpg" style="width:1200px;"> 
 		<div id="frame"> </div>
 	</div>
 
+
+	
 	<!-- 우측카테고리 -->
 	<div id="aside">
 	
-		<div id="member">
-			<a href="member/memberJoin.html">회원가입 </a>
-			<a href="">로그인 </a>
-			<a href="">로그아웃 </a>
+		<div class="item color1">
+			<a href="">회원가입 </a>
 		</div>
-
+		<div class="item color2">
+			<a href="">회원가입 </a>
+		</div>
+		<div class="item color3">
+			<a href="">회원가입 </a>
+		</div>
+		<div class="item color4">
+			<a href="">회원가입 </a>
+		</div>
 	</div>
 	
 	<!-- 헤더 밑 푸터 -->
