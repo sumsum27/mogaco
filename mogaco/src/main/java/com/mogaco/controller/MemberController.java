@@ -24,7 +24,7 @@ public class MemberController {
 	
 	@RequestMapping(value="/memberJoin", method = RequestMethod.GET)
 	public void memberJoin(HttpServletRequest req, HttpServletRequest res){
-    	System.out.println("페이지이동");
+    	System.out.println("회원가입 이동");
     }
 
 	@RequestMapping(value="/memberJoin", method = RequestMethod.POST)

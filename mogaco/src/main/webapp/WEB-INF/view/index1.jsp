@@ -48,19 +48,20 @@
 	    </ul>
 	    
 	    <!-- 카테고리 -->
-	    <ul class="category">
+	    <ul id="category">
 	    
 	    	<li id="info">
 	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">모각코 알파팀 소개 </span>
 				
-				<%-- <ul>
-					<li>
+				<ul class="submnu" style="opacity: 0.396789; display: none;">
+					<li class="current">
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">안내 </span>
 					</li>
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">관련링크, 문의처 </span>
 					</li>
-				</ul> --%>	
+				</ul>
+				
 	    	</li>
 	    
 	    	<li id="before">
@@ -75,33 +76,33 @@
 	    	<li id="reveiw">
 	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">개인 리뷰 </span>
 				
-				<%-- <ul>
+				<ul class="submnu" style="opacity: 0.396789; display: none;">
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">개인리뷰 </span>
 					</li>
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">목표 </span>
 					</li>
-				</ul>	 --%>
+				</ul>	
 	    	</li>
 	    	
 	    	<li id="daily">
 	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">데일리</span>
 				
-				<%-- <ul>
+				<ul class="submnu" style="opacity: 0.396789; display: none;">
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">안내 </span>
 					</li>
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">관련링크, 문의처 </span>
 					</li>
-				</ul> --%>	
+				</ul>	
 	    	</li>	
 	    	
 	        <li id="share">
 	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">공유 행사 </span>
 				
-				<%-- <ul>
+				<ul class="submnu" style="opacity: 0.396789; display: none;">
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">공유행사 </span>
 					</li>
@@ -111,7 +112,7 @@
 					<li>
 						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">공유자료 </span>
 					</li>
-				</ul> --%>	
+				</ul> 	
 	    	</li>	
 	    	
 	    	<li id="free">
@@ -124,6 +125,7 @@
 	    	<img src="common/image/copyright.png" alt="Logo">
 	    </div>
 	
+		<div id="navbg" style="display: none; opacity: 0.7;"></div>
 	</div>
 
 	<!-- 컨텐츠 -->
@@ -135,11 +137,10 @@
 
 	
 	<!-- 우측카테고리 -->
-	<div id="aside">
-	
-		<div class="item color1">
-			<a href="">회원가입 </a>
+	<div id="aside">		
+		<div class="item color1" onClick="javascript:showLoad('<c:url value="member/memberJoin.do" />');" style="cursor: pointer; cursor: hand;" >
 		</div>
+		
 		<div class="item color2">
 			<a href="">회원가입 </a>
 		</div>

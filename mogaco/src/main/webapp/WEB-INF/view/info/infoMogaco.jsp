@@ -10,74 +10,16 @@
 	<title>Insert title here</title>
 </head>
 
-
 <style>
-
-#info_container .location_bar {
-    max-width: 1150px;
-    padding: 0 0 0 50px;
-    height: 60px;
-    background: #fff;
-}
-#info_container .location_bar ul {
-    border-bottom: 1px solid #e6e6e6;
-}
-#info_container .location_bar ul li {
-    display: inline-block;
-    color: #888;
-    font-size: 13px;
-    line-height: 60px;
-}
-#info_container .location_bar ul li.divider {
-    margin: 0 5px;
-}
-
-#info_container > .inner {
-    max-width: 1200px;
-    padding-top: 20px;
-    padding-left: 45px;
-}
-#info_container > .inner .title {
-    margin-bottom: 40px;
-}
-
-#info_container > .inner .title h2 {
-    font-size: 35px;
-    font-weight: 600;
-    color: #333;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    width: 30px;
-}
-#info_container > .inner p {
-    font-size: 12px;
-    color: #888;
-    line-height: 1.6;
-}
-
 #info_img {
 	width: 1000px;
 }
-
-#info_container > .inner .content{
-
-    font-size: 22px;
-    font-weight: 600px;
-    color: #444;
-    line-height: 1.2;
-    margin-bottom: 20px;
-
-}
-
-
-
-
 </style>
 
 <body>
 <div id="wrap">
 
-	<div id="info_container">
+	<div id="main_container">
 	
 	    <div class="location_bar">
 	   	    <ul>
@@ -91,17 +33,17 @@
 	    
 	    <div class="inner"> 
 
-		    <div class="title">
+		    <div class="title1">
 		    	 <h2>Welcome</h2>
 		    	 <p>여자개발자모임의 모각코 알파팀 소개 입니다.<br />
 		 		         반갑습니다.</p>
 		    </div>
     
-    		<div class="contents">
+    		<div class="title2">
 		    	 <h2>안녕하세요. 모각코 알파팀 입니다.</h2>
 		    	 <p style="color:#242424;">저희는 여자개발자모임의 모각코 알파팁 입니다.<br />
 		 		         매주 토요일 10시에 만나 각자 코딩을 하는 시간을 갖습니다.<br />
-		 		        저희와 뜻을 함께할 분들은 언제든 연락 주십시오</p>
+		 		        저희와 뜻을 함께할 분들은 언제든 연락 주십시오.호호호호홍 홍홍</p>
 		    </div>
 		    
 		    <div class="info_img" style="margin-top:30px;">
