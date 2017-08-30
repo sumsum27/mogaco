@@ -30,8 +30,9 @@ public class MemberController {
 	@RequestMapping(value="/memberJoin", method = RequestMethod.POST)
 	public String memberJoin(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
 		System.out.println("등록");
+		System.out.println(map.toString());
 		service.memberJoin(map);
-    	return "/member/memberJoin";
+    	return "/";
     	
     }
 }

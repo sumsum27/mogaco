@@ -36,7 +36,7 @@
 		    <div class="title1">
 		    	 <h2>Welcome</h2>
 		    	 <p>여자개발자모임의 모각코 알파팀 소개 입니다.<br />
-		 		         반갑습니다.</p>
+		 		         </p>
 		    </div>
     
     		<div class="title2">

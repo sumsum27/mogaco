@@ -1,8 +1,16 @@
 @CHARSET "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.nanum { font-family: 'Nanum Barun Gothic'; } 
 
+/* 사이드 프레임 css */
+
+body{	
+	background-color:#fafafa;
+}
 * {
     -webkit-text-size-adjust: none;
     box-sizing: border-box;
+
 }
 
 ul, ol {
@@ -87,6 +95,7 @@ body.main #navbg {
 
 
 #container {
+	background-color:#f9f9f9;
 	position: fixed;
     top: 0;
     left: 0; 

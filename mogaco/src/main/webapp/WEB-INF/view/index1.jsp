@@ -19,10 +19,10 @@
 				$('#frame').html(response);
 			}
 		})
-	}
-		
-</script>	
+	}	
 	
+</script>	
+
 <body>	
 <div id="wrap">
 
@@ -48,7 +48,7 @@
 	    </ul>
 	    
 	    <!-- 카테고리 -->
-	    <ul id="category">
+	    <ul id="category" class="nanum">
 	    
 	    	<li id="info">
 	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">모각코 알파팀 소개 </span>
@@ -139,22 +139,31 @@
 	<!-- 우측카테고리 -->
 	<div id="aside">		
 		<div class="item color1" onClick="javascript:showLoad('<c:url value="member/memberJoin.do" />');" style="cursor: pointer; cursor: hand;" >
+		    <img id="join" alt="" src="common/image/iconmk.png" style="width:50px; margin-top:15px;"> 
+			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px; ">JOIN</h3> 
+			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">환영합니다</h5> 
 		</div>
 		
 		<div class="item color2">
-			<a href="">회원가입 </a>
+			<img id="join" alt="" src="common/image/iconmk2.png" style="width:50px; margin-top:15px;"> 
+			<h3 style="margin:0px; color:#444; margin-top:10px;">LOGIN</h3> 
+			<h5 style="margin:0px; color:#666; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">로그인 해주세요</h5> 			
 		</div>
 		<div class="item color3">
-			<a href="">회원가입 </a>
+			<img id="join" alt="" src="common/image/iconmk.png" style="width:50px; margin-top:15px;"> 
+			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px;">My page</h3> 
+			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">어서오세요</h5> 
 		</div>
 		<div class="item color4">
-			<a href="">회원가입 </a>
+			<img id="join" alt="" src="common/image/iconmk3.png" style="width:50px; margin-top:15px;"> 
+			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px;">Message</h3> 
+			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">메세지 왔어요</h5> 
 		</div>
 	</div>
 	
 	<!-- 헤더 밑 푸터 -->
 	<div id="footer">
-	
+	z
 	</div>
 	
 	<!-- 상단스크롤 -->
