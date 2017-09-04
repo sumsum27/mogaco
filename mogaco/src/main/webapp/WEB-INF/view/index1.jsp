@@ -130,14 +130,14 @@
 
 	<!-- 컨텐츠 -->
 	<div id="container">
-		<img id="team" alt="" src="common/image/team.jpg" style="width:1200px;"> 
+		<img id="team" alt="" src="common/image/main.jpg" style="width:1320px;"> 
 		<div id="frame"> </div>
 	</div>
 
 
 	
 	<!-- 우측카테고리 -->
-	<div id="aside">		
+<%-- 	<div id="aside">		
 		<div class="item color1" onClick="javascript:showLoad('<c:url value="member/memberJoin.do" />');" style="cursor: pointer; cursor: hand;" >
 		    <img id="join" alt="" src="common/image/iconmk.png" style="width:50px; margin-top:15px;"> 
 			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px; ">JOIN</h3> 
@@ -160,7 +160,7 @@
 			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">메세지 왔어요</h5> 
 		</div>
 	</div>
-	
+	 --%>
 	<!-- 헤더 밑 푸터 -->
 	<div id="footer">
 	z

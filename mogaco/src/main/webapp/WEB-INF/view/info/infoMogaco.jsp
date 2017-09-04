@@ -12,7 +12,8 @@
 
 <style>
 #info_img {
-	width: 1000px;
+	width: 1350px;
+
 }
 </style>
 
@@ -33,21 +34,8 @@
 	    
 	    <div class="inner"> 
 
-		    <div class="title1">
-		    	 <h2>Welcome</h2>
-		    	 <p>여자개발자모임의 모각코 알파팀 소개 입니다.<br />
-		 		         </p>
-		    </div>
-    
-    		<div class="title2">
-		    	 <h2>안녕하세요. 모각코 알파팀 입니다.</h2>
-		    	 <p style="color:#242424;">저희는 여자개발자모임의 모각코 알파팁 입니다.<br />
-		 		         매주 토요일 10시에 만나 각자 코딩을 하는 시간을 갖습니다.<br />
-		 		        저희와 뜻을 함께할 분들은 언제든 연락 주십시오.호호호호홍 홍홍</p>
-		    </div>
-		    
 		    <div class="info_img" style="margin-top:30px;">
-		    	<img id="info_img" alt="" src="common/image/info.jpg">
+		    	<img id="info_img" alt="" src="common/image/23.jpg">
 		    </div>
 	    </div>
     

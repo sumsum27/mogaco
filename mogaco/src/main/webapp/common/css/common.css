@@ -5,7 +5,7 @@
 /* 사이드 프레임 css */
 
 body{	
-	background-color:#fafafa;
+	background-color:#fcfcfc;
 }
 * {
     -webkit-text-size-adjust: none;
@@ -106,7 +106,7 @@ body.main #navbg {
 
 
 
-#frame{width:1200px; height:100%;}
+#frame{ width : 100%; height:100%;}
 
 #aside {
 	position : fixed;
