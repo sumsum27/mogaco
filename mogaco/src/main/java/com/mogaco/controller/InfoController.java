@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("info/**")
 public class InfoController {
 
-	@RequestMapping(value="/infoMogaco.do", method = RequestMethod.GET)
+	@RequestMapping(value="/info.do", method = RequestMethod.GET)
 	public String aboutMogaco(HttpServletRequest req, HttpServletRequest res){
 		
-    	System.out.println("info/infoMogaco");
+    	System.out.println("info/info");
     	
-    	return "/info/infoMogaco";
+    	return "/info/info";
     }
 
 

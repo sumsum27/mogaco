@@ -14,9 +14,9 @@
 <script type="text/javascript">	
 
 	function showLoad(url) {
-		$('#frame').load(url, function( response, status){
+		$('#main_frame').load(url, function( response, status){
 			if(status == 'error') {
-				$('#frame').html(response);
+				$('#main_frame').html(response);
 			}
 		})
 	}	
@@ -51,18 +51,8 @@
 	    <ul id="category" class="nanum">
 	    
 	    	<li id="info">
-	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">모각코 알파팀 소개 </span>
-				
-				<ul class="submnu" style="opacity: 0.396789; display: none;">
-					<li class="current">
-						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">안내 </span>
-					</li>
-					<li>
-						<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">관련링크, 문의처 </span>
-					</li>
-				</ul>
-				
-	    	</li>
+	    		<span onClick="javascript:showLoad('<c:url value="info/info.do"/>');" style="cursor: pointer; cursor: hand;">모각코 알파팀 소개 </span>
+			</li>
 	    
 	    	<li id="before">
 	    		<span onClick="javascript:showLoad('<c:url value="info/infoMogaco.do" />');" style="cursor: pointer; cursor: hand;">이번주 모임 안내 </span>
@@ -126,81 +116,33 @@
 	    </div>
 	
 		<div id="navbg" style="display: none; opacity: 0.7;"></div>
-	</div>
-
-	<!-- 컨텐츠 -->
-	<div id="container">
-		<img id="team" alt="" src="common/image/main.jpg" style="width:1320px;"> 
-		<div id="frame"> </div>
-	</div>
-
-
-	
-	<!-- 우측카테고리 -->
-<%-- 	<div id="aside">		
-		<div class="item color1" onClick="javascript:showLoad('<c:url value="member/memberJoin.do" />');" style="cursor: pointer; cursor: hand;" >
-		    <img id="join" alt="" src="common/image/iconmk.png" style="width:50px; margin-top:15px;"> 
-			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px; ">JOIN</h3> 
-			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">환영합니다</h5> 
-		</div>
 		
-		<div class="item color2">
-			<img id="join" alt="" src="common/image/iconmk2.png" style="width:50px; margin-top:15px;"> 
-			<h3 style="margin:0px; color:#444; margin-top:10px;">LOGIN</h3> 
-			<h5 style="margin:0px; color:#666; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">로그인 해주세요</h5> 			
-		</div>
-		<div class="item color3">
-			<img id="join" alt="" src="common/image/iconmk.png" style="width:50px; margin-top:15px;"> 
-			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px;">My page</h3> 
-			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">어서오세요</h5> 
-		</div>
-		<div class="item color4">
-			<img id="join" alt="" src="common/image/iconmk3.png" style="width:50px; margin-top:15px;"> 
-			<h3 style="margin:0px; color:#f4f4f4; margin-top:10px;">Message</h3> 
-			<h5 style="margin:0px; color:#f4f4f4; font-size:12px; margin-top:5px; font-family: 'Nanum Barun Gothic'">메세지 왔어요</h5> 
-		</div>
 	</div>
-	 --%>
-	<!-- 헤더 밑 푸터 -->
-	<div id="footer">
-	z
-	</div>
+	<!-- 좌측카테고리 -->
+
+
+	<!-- 메인 슬라이드 -->
+    <div id="main_slider">
+		<img id="main_image" alt="" src="common/image/mainImage.jpg" style="width:1320px;"> 
+    </div>
+	<!-- 메인 슬라이드 -->
 	
-	<!-- 상단스크롤 -->
-	<div id="scrollTop">
 	
-	</div>
+	<!-- 중앙 프레임 -->
+	<div id="main_frame"></div>
+	<!-- 중앙 컨텐츠 -->
+
+
+
+
+
+
+
+
 
 
 </div>
 </body>
 	
-<!--  
 
-<c:url value="/showMessage.html" var="messageUrl" />
-<a href="${messageUrl}">Click to enter</a>
-	
-+ 목표공유 추가하기 	
-	
-1. 모각코안내(Info)
-  모각코란 aboutMogaco 
-  인원구성 PeopleMogaco > 메세지 & 채팅 
-  관련링크 Link Mogaco (페북,까페) 
-  문의처 	 ContactMogaco
-2. 이번주모임(Meeting this week) > 한페이지 , 지도 
-  모임장소 Meeting place
-  참석인원 Presence 
-  봉사인원,간식메뉴  Service,
-  에프터모임 After
-3. 모임후기(report) > 한페이지 파일업로드,엑셀인쇄,사진이미지,댓글 
-  참석인원,예산
-  사진 
-  후기글 
-4.개인리뷰(review) 
-5.날마다(daily) 엑셀화 분석해줌 
-6.공유행사, 자료, 기타행사참여후기 
-7.Board건의 및 자유게시판
-
--->
-	
 </html>
