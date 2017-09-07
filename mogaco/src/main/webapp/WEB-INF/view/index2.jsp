@@ -123,7 +123,7 @@
 
 	<!-- 메인 슬라이드 -->
     <div id="main_slider">
-		<img id="main_image" alt="" src="common/image/mainImage.jpg" style="width:1320px;"> 
+		<img id="main_image" alt="" src="common/image/mainImage1.jpg" style="width:1320px;"> 
     </div>
 	<!-- 메인 슬라이드 -->
 	
