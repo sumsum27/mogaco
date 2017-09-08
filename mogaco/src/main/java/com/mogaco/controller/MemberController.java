@@ -32,7 +32,7 @@ public class MemberController {
 		System.out.println("등록");
 		System.out.println(map.toString());
 		service.memberJoin(map);
-    	return "/";
+    	return "redirect:/";
     	
     }
 }

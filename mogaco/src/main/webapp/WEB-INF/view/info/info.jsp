@@ -11,6 +11,7 @@
 </head>
 
 <style>
+/*** 네비공통 */
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
@@ -40,6 +41,8 @@
 	text-decoration: none;
 	font-family :'Hanna', sans-serif;	
 }
+
+/* 네비공통 ***/
 
 #infoTitle{
 	width: 100%;
@@ -82,7 +85,7 @@
 				<a href="report/report.do">REPORT</a>
 			</li>
 			<li class="navi_li">
-				<a href="notice/notice.do">NOTICE</a>
+				<a href="../notice/noticeList.do">NOTICE</a> http://localhost:8082/mogaco/notice/noticeList.do 
 			</li>
 			
 		</ul>

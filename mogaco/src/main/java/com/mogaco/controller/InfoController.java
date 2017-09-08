@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class InfoController {
 
 	@RequestMapping(value="/info.do", method = RequestMethod.GET)
-	public String aboutMogaco(HttpServletRequest req, HttpServletRequest res){
+	public String infoMogaco(HttpServletRequest req, HttpServletRequest res){
 		
     	System.out.println("info/info");
     	
