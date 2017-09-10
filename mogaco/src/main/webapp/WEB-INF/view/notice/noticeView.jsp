@@ -4,11 +4,23 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ include file="/WEB-INF/common/taglib.jsp" %>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<title>Insert title here</title>
-</head>
+</head>	
+	
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$("#join").click(function(){
+		alert("jquery");
+		$("#frm").submit();
+	});
+	
+});
+
+</script>
 
 <style>
 /* 네비공통 */
@@ -43,9 +55,22 @@
 }
 
 /* 네비공통 */
+
+.style select {
+ width: 150px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    color:#ddd;
+    border: 1px solid red;
+    border-radius: 3px;
+ }
+
 </style>
 
+
 <body>
+
 <div id="wrap">
 
 <!-- 네비 -->
@@ -75,37 +100,16 @@
 		</ul>
 	</div>
 	
-	
-	공지사항 리스트 페이지 입니당 <br>
-	
-	<a href="../notice/noticeInsert.do">공지사항 인서트1</a>
-	
- 	<c:forEach items="${noticeList}" var="list">
- 	
- 	${list.id}
- 	<a href="../notice/noticeView.do?num=${list.num}">${list.num}</a> 
- 	${list.title}
- 	${list.contents}
- 	<br>
-	 
-<%--    	<tr>
-   		<td class="pd">${list.reg_date}</td>
-   		<td class="pd">${list.sender}</td>
-   		<td class="title pd" id="${list.num}" style="color:grey; cursor: pointer; ">${list.title} </td>
-   		<td id="date" class="pd">
-    		<c:choose>
-	    		<c:when test="${list.checked eq null}">
-	    			읽지않음
-	    		</c:when>
-	    		<c:otherwise>
-	    			읽음 (${list.checked})
-	    		</c:otherwise>
-	    	</c:choose>	
-   		</td>
-   	</tr>  --%>
+<!-- 뷰 -->
 
- </c:forEach>		
+<br>${noticeView.num}
+<br>${noticeView.id}
+<br>${noticeView.title}
+<br>${noticeView.contents}
+<br>${noticeView.date}
+<br>${noticeView.picture}
 	
+<a href="../notice/noticeUpdate.do?num=${noticeView.num}">수정</a>	
 
 </div>
 </body>

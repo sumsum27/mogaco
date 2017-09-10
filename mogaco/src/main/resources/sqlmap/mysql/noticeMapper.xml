@@ -9,10 +9,16 @@
 		insert into notice (id, title, contents, date, picture) values (#{id},#{title},#{contents},#{date},#{picture})
 	</insert>
 
-	<select id = "noticeSelect"  resultType="com.mogaco.vo.NoticeVO">
+	<select id = "noticeSelectList"  resultType="com.mogaco.vo.NoticeVO">
 		select * from notice order by num desc
 	</select>
      
-
+	<select id = "noticeSelectView"  resultType="java.util.Map">
+		select * from notice where num = #{num}
+	</select>
      
+  	<update id="noticeUpdate" >
+    	update notice set id=#{id}, title=#{title}, contents=#{contents}, date=#{date}, picture=#{picture} where num = #{num}
+    </update>
+
 </mapper>

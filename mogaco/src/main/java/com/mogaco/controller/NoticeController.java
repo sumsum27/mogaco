@@ -25,12 +25,52 @@ public class NoticeController {
 	@Autowired
 	private NoticeService service;
 	
+	@RequestMapping(value="/noticeUpdate.do", method = RequestMethod.POST)
+	public String noticeUpdate2(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
+		
+		//update
+		System.out.println("noticeUpdate POST:::" + map.toString());
+		int result = service.noticeUpdate(map);
+		 
+		if(result >0 ){
+			//select  
+
+			Map<String, Object> result2 = service.noticeSelectView(map);
+			model.addAttribute("noticeView", result2);
+			
+		}
+		
+		return "/notice/noticeView";
+	}
+	
+	@RequestMapping(value="/noticeUpdate.do", method = RequestMethod.GET)
+	public void noticeUpdate(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
+		System.out.println("noticeUpdate이동 파라미터:" + map.toString());
+		Map<String, Object> result = service.noticeSelectView(map);
+    	model.addAttribute("noticeView", result);
+		
+		
+	}
+	
+	@RequestMapping(value="/noticeView.do", method = RequestMethod.GET)
+	public void noticeView(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
+		
+		System.out.println("noticeView 로 페이지이동");
+    	System.out.println(map.toString());
+
+    	Map<String, Object> result = service.noticeSelectView(map);
+    	model.addAttribute("noticeView", result);
+    	
+    	System.out.println("view result:::" + result.toString());
+    	
+    }
+	
 	@RequestMapping(value="/noticeList.do", method = RequestMethod.GET)
 	public void noticeList(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
 		
 		
 		List<NoticeVO> list = new ArrayList<NoticeVO>();
-		list = service.noticeSelect(map);
+		list = service.noticeSelectList(map);
 		
     	System.out.println("noticeList컨트롤러");
     	System.out.println("listsize:::"+ list.size());

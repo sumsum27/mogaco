@@ -11,8 +11,18 @@ import com.mogaco.vo.NoticeVO;
 @Service
 public class NoticeService extends ServiceWrapper{
 	
-	public Object noticeSelect;
-
+		
+	@Transactional
+	public int noticeUpdate(Map map){
+		
+		System.out.println("noticeUpdate");
+		System.out.println(map.toString());
+		
+		int result = dao.update("noticeMapper.noticeUpdate", map);
+		return result;
+		
+	}
+	
 	@Transactional
 	public void noticeInsert(Map map){
 		
@@ -23,14 +33,39 @@ public class NoticeService extends ServiceWrapper{
 	}
 
 	@Transactional
-	public List<NoticeVO> noticeSelect(Map map){
+	public List<NoticeVO> noticeSelectList(Map map){
 		
-		System.out.println("noticeSelect");
+		System.out.println("noticeSelectList");
 		
-		List result = dao.selectList("noticeMapper.noticeSelect", map);
+		List result = dao.selectList("noticeMapper.noticeSelectList", map);
 		System.out.println("돌아왔니??");
 		System.out.println("dao result: " + result.size());
 		
 		return result;
 	}
+	
+	@Transactional
+	public Map<String, Object> noticeSelectView(Map map){
+		
+		System.out.println("noticeSelectView");
+		
+		Map<String, Object> result = dao.selectOne("noticeMapper.noticeSelectView", map); 
+		
+		System.out.println("dao result: " + result.size());
+		
+		return result;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
