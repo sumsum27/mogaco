@@ -89,7 +89,7 @@ $(document).ready(function(){
 	
 	
 	<div>
-		<form action="notice/noticeUpdate.do" method="post" id="frm">
+		<form action="..notice/noticeUpdate.do" method="post" id="frm">
 			<select>
 				<option>말머리</option>
 				<option>행사</option>

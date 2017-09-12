@@ -76,10 +76,9 @@
 	</div>
 	
 	
-	공지사항 리스트 페이지 입니당 <br>
-	
-	<a href="../notice/noticeInsert.do">공지사항 인서트1</a>
-	
+	<a href="../notice/noticeInsert.do">공지사항 글쓰기</a>
+	<br><br><br>
+ 	
  	<c:forEach items="${noticeList}" var="list">
  	
  	${list.id}
@@ -87,22 +86,6 @@
  	${list.title}
  	${list.contents}
  	<br>
-	 
-<%--    	<tr>
-   		<td class="pd">${list.reg_date}</td>
-   		<td class="pd">${list.sender}</td>
-   		<td class="title pd" id="${list.num}" style="color:grey; cursor: pointer; ">${list.title} </td>
-   		<td id="date" class="pd">
-    		<c:choose>
-	    		<c:when test="${list.checked eq null}">
-	    			읽지않음
-	    		</c:when>
-	    		<c:otherwise>
-	    			읽음 (${list.checked})
-	    		</c:otherwise>
-	    	</c:choose>	
-   		</td>
-   	</tr>  --%>
 
  </c:forEach>		
 	

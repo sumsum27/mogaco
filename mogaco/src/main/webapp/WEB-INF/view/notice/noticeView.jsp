@@ -110,7 +110,7 @@ $(document).ready(function(){
 <br>${noticeView.picture}
 	
 <a href="../notice/noticeUpdate.do?num=${noticeView.num}">수정</a>	
-
+<a href="../notice/noticeDelete.do?num=${noticeView.num}">삭제</a>
 </div>
 </body>
 

@@ -6,7 +6,26 @@
 <mapper namespace = "memberMapper">
 
 	<insert id = "memberInsert">
-		insert into member (id,pw,name,gender,email,address) values (#{id},#{pw},#{name},#{gender},#{email},#{address})
+		insert into member (group, id, pw, name, nickname, email, phone ,gender, intro, pic) values ('A',#{id},#{pw},#{name},#{nickname},#{gender},#{email},#{phone}, #{gender}, #{intro}, #{pic})
 	</insert>
 
+	<select id = "memberLogin"  resultType="java.util.Map">
+		select * from member where id = #{id} and pw = #{pw}
+	</select>
+	
+	<select id = "memberView"  resultType="java.util.Map">
+		select * from member where id = #{id}
+	</select>
+	
+  	<update id= "memberUpdate" >
+    	update member set name=#{name}, nickname=#{nickname}, email=#{email}, phone=#{phone}, gender=#{gender}, intro=#{intro}, pick=#{pick} where id=#{id}
+    </update>
+    
+    <delete id= "memberDelete">
+    	delete from member where id=#{id}
+    </delete>
+    
+    <select id = "memberList"  resultType="com.mogaco.vo.MemberVO">
+		select * from member order by num desc
+	</select>
 </mapper>

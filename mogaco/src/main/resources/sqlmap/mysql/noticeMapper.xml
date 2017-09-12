@@ -17,8 +17,12 @@
 		select * from notice where num = #{num}
 	</select>
      
-  	<update id="noticeUpdate" >
+  	<update id= "noticeUpdate" >
     	update notice set id=#{id}, title=#{title}, contents=#{contents}, date=#{date}, picture=#{picture} where num = #{num}
     </update>
+    
+    <delete id= "noticeDelete">
+    	delete from notice where num=#{num}
+    </delete>
 
 </mapper>
