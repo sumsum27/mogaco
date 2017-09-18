@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace = "qnaMapper">
+
+	<insert id = "qnaInsert">
+		insert into board (id, category, title, contents, date, picture) values (#{id},#{category},#{title},#{contents},#{date},#{picture})
+	</insert>
+
+	<select id = "qnaSelectList"  resultType="com.mogaco.vo.QnaVO">
+		select * from board order by num desc
+	</select>
+     
+	<select id = "qnaSelectView"  resultType="java.util.Map">
+		select * from board where num = #{num}
+	</select>
+     
+  	<update id= "qnaUpdate" >
+    	update board set id=#{id}, title=#{title}, contents=#{contents}, date=#{date}, picture=#{picture} where num = #{num}
+    </update>
+    
+    <delete id= "qnaDelete">
+    	delete from board where num=#{num}
+    </delete>
+
+</mapper>
