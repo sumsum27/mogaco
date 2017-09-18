@@ -3,6 +3,7 @@ package com.mogaco.vo;
 public class NoticeVO {
 	
 	private String num;
+	private String category;
 	private String id;
 	private String title;
 	private String contents;
@@ -14,6 +15,14 @@ public class NoticeVO {
 	}
 	public void setNum(String num) {
 		this.num = num;
+	}
+	
+	
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	public String getId() {
 		return id;

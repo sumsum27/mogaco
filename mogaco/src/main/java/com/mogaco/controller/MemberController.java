@@ -46,10 +46,9 @@ public class MemberController {
 	@RequestMapping(value="/memberLogin", method = RequestMethod.POST)
 	public String memberLogin(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
     	System.out.println("로그인 처리 ::: " + map.toString());
-    	Map<String, Object> result = service.memberLogin(map);
-    	System.out.println("업데이트정보확인1 "+map.toString());
+    	Map<String, Object> results = service.memberLogin(map);
     	System.out.println("업데이트정보확인2 "+map.get("id")) ;
-    	return "redirect:/member/memberView.do?id="+map.get("id");
+    	return "redirect:/";
     }
 	
 

@@ -23,7 +23,7 @@
 
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
+            <div class="hamburger"> <!-- 모바일크기 -->
                 <span>이 메뉴는 뭐지??</span>
                 <span>이 메뉴는 뭐지??</span>
                 <span>이 메뉴는 뭐지??</span>
@@ -39,44 +39,45 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-            	<li class="nav-item">
+            
+            	<li class="nav-item" style="margin-left:10px;">
                     <a class="nav-link link text-white display-4" href="info/info.do">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                       <!--  <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> -->
                         ABOUT US
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="margin-left:10px;">
                     <a class="nav-link link text-white display-4" href="goal/goal.do">
                         
                         GOAL
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="margin-left:10px;">
                     <a class="nav-link link text-white display-4" href="meetup/meetup.do">
                        
                         MEETUP
                     </a>
                 </li>                
-                <li class="nav-item">
+                <li class="nav-item" style="margin-left:10px;">
                     <a class="nav-link link text-white display-4" href="reveiw/review.do">
                         
                         REVIEW
                     </a>
                 </li>                
-                <li class="nav-item">
+                <li class="nav-item" style="margin-left:10px;">
                     <a class="nav-link link text-white display-4" href="report/report.do">
                         
                         REPORT
                     </a>
                 </li>                
-                <li class="nav-item">
+                <li class="nav-item" style="margin-left:10px;">
                     <a class="nav-link link text-white display-4" href="notice/noticeList.do">
                        
                         NOTICE
                     </a>
                 </li>   
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="">
+                <li class="nav-item" style="margin:0 10px;">
+                    <a class="nav-link link text-white display-4" href="qna/qnaList.do">
                        
                         BOARD
                     </a>
