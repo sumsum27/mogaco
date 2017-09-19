@@ -53,6 +53,7 @@ public class QnaController {
 	@RequestMapping(value="/qnaView.do", method = RequestMethod.GET)
 	public void qnaView(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
 		System.out.println("qnaView 페이지이동, 글번호 ::: " + map.toString());
+	
 		Map<String, Object> result = service.qnaSelectView(map);
 		model.addAttribute("qnaView", result);
 		System.out.println("qnaView 결과 :::" + result.toString());

@@ -18,11 +18,17 @@
  	
  	<c:forEach items="${memberList}" var="list">
  	
- 		<a href="../member/memberView.do?id=${list.id}">${list.id}</a> <br>
-	 	${list.name}<br>
-	 	${list.email}<br>
-	 	${list.gender}<br>
-	 	
+	 	<br>${list.num}
+	 	<br>${list.group}
+		<br><a href="../member/memberView.do?id=${list.id}">${list.id} </a> 
+		<br>${list.pw}
+		<br>${list.name}
+		<br>${list.nickname}
+		<br>${list.email}
+		<br>${list.phone}
+		<br>${list.intro}
+		<br>${list.pic}
+
  	</c:forEach>		
 	
 

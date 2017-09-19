@@ -12,7 +12,8 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-	$("#update").click(function(){
+	$("#write").click(function(){
+		alert("jquery");
 		$("#frm").submit();
 	});
 });
@@ -143,22 +144,23 @@ $(document).ready(function(){
         
         <div class="col-md-5" style="min-width:900px;">
         
-        	<form action="..qna/qnaUpdate.do" method="post" id="frm">
-	            <h2><input type="text" name="title" value="${qnaView.title}" placeholder="제목" style="min-width:900px;"></h2>
+        	<form action="qna/qnaInsert.do" method="post" id="frm"> 
+	            <h2><input type="text" name="title" value="" placeholder="제목" style="min-width:900px;"></h2>
 	            <hr style="margin-top:10px; margin-bottom:17px;">
 	            <!-- 에디터 넣기 -->
 	            <br>
-	            <div id="noticeView_contents" style="min-height:400px;">
-		           <textarea rows="" cols="" name="contents"> ${qnaView.contents} </textarea>	  
+	            <div id="qnaView_contents" style="min-height:400px;">
+		           <textarea rows="" cols="" name="contents"> 베베베	</textarea>	  
 		           
 		           <!-- 임시 -->
-					<input type="text" name="num" value="${qnaView.num}" placeholder="num">
-					<input type="text" name="date" value="${qnaView.date}" placeholder="date">
-					<input type="text" name="picture" value="${qnaView.picture}" placeholder="picture">
-					<input type="text" name="id" value="${qnaView.id}" placeholder="id">
+		       
+				   <input type="text" name="date" value="" placeholder="date">
+				   <input type="text" name="picture" value="" placeholder="picture">
+				   <input type="text" name="id" value="" placeholder="id">
+				   <input type="text" name="category" value="" placeholder="category">
 			       
 	            </div>
-				<input type="button" id="update" value="수정">
+				<input type="button" id="write" value="등록">
 				<input type="button" id="join" value="목록으로"> <!-- 링크넣기 -->
 			</form>
         </div>

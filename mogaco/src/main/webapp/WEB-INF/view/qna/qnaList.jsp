@@ -117,7 +117,7 @@
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
-                    ARTICLE HEADER
+                    	Q & A 
                 </h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">
                     Article header with background image and parallax effect
@@ -153,7 +153,7 @@
 
 	</c:forEach>	
 
-	<a href="../notice/noticeInsert.do">공지사항 글쓰기</a> <br><br>
+	<a href="../qna/qnaInsert.do">공지사항 글쓰기</a> <br><br>
 	
     <!-- Pagination -->
     <ul class="pagination justify-content-center">
@@ -182,14 +182,6 @@
 
 </div>
 <!-- /.container -->
-
-
-
-
-
-
-
-
 
 
 <section class="cid-quZOQI6B2W" id="footer5-22" data-rv-view="164">

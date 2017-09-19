@@ -13,15 +13,21 @@
 
 <div id="wrap">
 
+<br>${memberView.group}
 <br>${memberView.id}
 <br>${memberView.pw}
 <br>${memberView.name}
+<br>${memberView.nickname}
 <br>${memberView.email}
-<br>${memberView.gender}
-<br>${memberView.address}
+<br>${memberView.phone}
+<br>${memberView.intro}
+<br>${memberView.pic}
 	
 <a href="../member/memberUpdate.do?id=${memberView.id}">수정</a>	
 <a href="../member/memberDelete.do?id=${memberView.id}">삭제</a>
+
+group, id, pw, name, nickname, email, phone , intro, pic
+
 </div>
 </body>
 

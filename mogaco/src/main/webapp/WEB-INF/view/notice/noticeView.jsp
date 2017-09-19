@@ -10,6 +10,14 @@
    <title>Insert title here</title>
 </head>
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#join").click(function(){
+		alert("jquery");
+		$("#frm").submit();
+	});
+});
+</script>
 
 <style>
 .view-btn {
@@ -127,36 +135,49 @@
     </div>
 </section>
 
+<!-- 시간되면 슬라이드로 내리기 -->
 
 <!-- Page Content -->
-<div class="container" style="max-width: 1050px;">
+<div class="container" style="max-width: 1050px; margin-top:100px;">
 
-	<br>${noticeView.num}
-<br>${noticeView.id}
-<br>${noticeView.title}
-<br>${noticeView.contents}
-<br>${noticeView.date}
-<br>${noticeView.picture}
+	<%-- <br>${noticeView.num}
+	<br>${noticeView.id}
+	<br>${noticeView.title}
+	<br>${noticeView.contents}
+	<br>${noticeView.date}
+	<br>${noticeView.picture} --%>
 
-	
     <!-- Project One -->
     <div class="row" style="margin: 0 auto;">
-        <div class="col-md-7">
+    
+        <%-- 이미지 
+		<div class="col-md-7">
             <a href="../notice/noticeView.do?num=${list.num}">
             <img class="img-fluid rounded mb-3 mb-md-0" src="../../../mogaco/assets/images/notice.PNG" alt="">
             </a>
+        </div> --%>
+        
+        <div class="col-md-5" style="min-width:900px;">
+            <h2>${noticeView.title}</h2>
+            <hr style="margin-top:10px; margin-bottom:17px;">
+            <p style="color:#9b9b9b; font-size:25px;">Posted  ${noticeView.date}</p> <!-- 시간까지 디비 변경 -->
+            <!-- 에디터 넣기 -->
+            <br>
+            <div id="noticeView_contents" style="min-height:400px;">
+	            ${noticeView.contents}            
+            </div>
+			<a href="../notice/noticeInsert.do">공지사항 글쓰기</a> <br>
+			<a href="../notice/noticeUpdate.do?num=${noticeView.num}">수정</a>	 
+			<a href="../notice/noticeDelete.do?num=${noticeView.num}">삭제</a> <!-- 다시한번 묻기 -->
+			<!-- 다시 목록으로 , -->
+			
         </div>
-        <div class="col-md-5" style="min-width:500px;">
-            <h2> <a href="../notice/noticeView.do?num=${list.num}">${list.title}</a> </h2>
-            <p style="color:#9b9b9b; font-size:25px;">${list.date}</p>
-            <a class="view-btn" href="../notice/noticeView.do?num=${list.num}">View Project</a>
-        </div>
+        
+        
     </div>
     <!-- /.row -->
 
-    <hr>
 
-	<a href="../notice/noticeInsert.do">공지사항 글쓰기</a> <br><br>
 	
     <!-- Pagination -->
     <ul class="pagination justify-content-center">

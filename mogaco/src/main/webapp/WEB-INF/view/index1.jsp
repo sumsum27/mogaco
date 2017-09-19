@@ -16,6 +16,35 @@
 	<title>Welcome</title>
 </head> 
 
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var message= '${message}';
+	var member= '${member.id}';
+
+   	alert(message); 		    		 
+   	alert(member); 		    		 
+
+    if(member != ''){
+    	$("#login").html(member + "님 MYPAGE");
+    }
+
+	$("#login").click(function(){
+
+		if(member != ''){
+			location.href = "member/memberView.do?id=${member.id}";			
+		}else{
+			location.href = "member/memberLogin.do";		
+		}
+		
+	});
+    
+	
+});
+
+
+</script>
+
 <body>	
 
 <!-- 상단네비 -->
@@ -85,10 +114,10 @@
                 
             </ul>
             <div class="navbar-buttons mbr-section-btn">
-                <a class="btn btn-sm btn-primary display-4" href="member/memberLogin.do">
                     <!-- <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span> -->
-                    LOGIN
-                </a>
+              	<a class="btn btn-sm btn-primary display-4">	
+              		<div id="login">login</div>
+              	</a>
             </div>
         </div>
     </nav>
@@ -161,12 +190,16 @@
     </div>
 </section>
 
+<a  href="member/memberJoin.do">회원가입</a>
+<a  href="member/memberLogout.do">로그아웃</a>
+
 <!-- 컨텐츠1 -->
 <section class="mbr-section article content12 cid-quNQXnJFvI" id="content12-7" data-rv-view="318">
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ul>
+                
                     <li><strong>MOBILE FRIENDLY</strong> - o special actions required, all sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site, it will adapt automagically. <a href="https://mobirise.com/">Try it now!</a></li>
                     <li><strong>EASY AND SIMPLE</strong> - cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required. <a href="https://mobirise.com/">Try it now!</a></li>
                     <li><strong>UNIQUE STYLES</strong> - choose from the large selection of latest pre-made blocks - full-screen intro, bootstrap carousel, content slider, responsive image gallery with lightbox, parallax scrolling, video backgrounds, hamburger menu, sticky header and more. <a href="https://mobirise.com/">Try it now!</a></li>

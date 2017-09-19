@@ -22,13 +22,16 @@ public class MemberService extends ServiceWrapper{
 	@Transactional
 	public Map<String, Object> memberLogin(Map map){
 		Map<String, Object> result = dao.selectOne("memberMapper.memberLogin", map); 
-		System.out.println("서비스 memberLogin result.size ::: " + result.size());
+		if(result!=null){			
+			System.out.println("서비스 memberView result.size ::: " + result.size());
+		}
 		return result;
 	}
 	
 	@Transactional
 	public Map<String, Object> memberView(Map map){
 		Map<String, Object> result = dao.selectOne("memberMapper.memberView", map); 
+		
 		System.out.println("서비스 memberView result.size ::: " + result.size());
 		return result;
 	}

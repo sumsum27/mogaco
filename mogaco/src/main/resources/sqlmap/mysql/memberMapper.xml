@@ -6,9 +6,9 @@
 <mapper namespace = "memberMapper">
 
 	<insert id = "memberInsert">
-		insert into member (group, id, pw, name, nickname,gender, email, phone , intro, pic) values ('A',#{id},#{pw},#{name},#{nickname},#{gender},#{email},#{phone}, #{intro}, #{pic})
+		insert into member (category, id, pw, name, nickname, email, phone, intro, pic ) values ('A', #{id}, #{pw}, #{name}, #{nickname}, #{email}, #{phone}, #{intro}, #{pic})
 	</insert>
-
+	
 	<select id = "memberLogin"  resultType="java.util.Map">
 		select * from member where id = #{Username} and pw = #{Password}
 	</select>
@@ -18,7 +18,7 @@
 	</select>
 	
   	<update id= "memberUpdate" >
-    	update member set name=#{name}, nickname=#{nickname}, gender=#{gender}, email=#{email}, phone=#{phone}, intro=#{intro}, pic=#{pic} where id=#{id}
+    	update member set name=#{name}, nickname=#{nickname}, email=#{email}, phone=#{phone}, intro=#{intro}, pic=#{pic} where id=#{id}
     </update>
     
     <delete id= "memberDelete">

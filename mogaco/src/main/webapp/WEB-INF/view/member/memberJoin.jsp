@@ -6,153 +6,231 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Insert title here</title>
-	<%@ include file="/WEB-INF/common/taglib.jsp" %>
+   <meta charset="utf-8">
+   <title>Insert title here</title>
+   <%@ include file="/WEB-INF/common/taglib.jsp" %>
 </head>
 <script type="text/javascript">
 
 $(document).ready(function(){
-	
-	$("#join").click(function(){
-
-		$("#com_formmail").submit();
-	});
-	
+  
+   $("#join").click(function(){
+      $("#frm").submit();
+   });
+   
 });
 
 </script>
 <style>
-
-.inquiry table img {display:inline-block !important; width:auto !important}
-.formmail_txt {color:#666}
-.formmail_border {width:90%; height:30px; color:#666;  border:none}
-input[name^=phone], input[name^=mobile] {width:70px}
-.formmail_title_bgcolor {background:#eeeeee;}
-.formmail_cell_bgcolor {background:#fff}
-.formmail_textarea_style {width:88%; padding-left:10px; color:#666; border:none}
-.tbl_contact { margin-bottom:30px}
-.tbl_contact .contact_line {height:3px; background:#555}
-.tbl_contact tbody tr td {padding:10px 15px; border-bottom:1px solid #dedede}
-.tbl_contact tbody tr td.no-padding {padding:0 !important; border-bottom:none !important}
-@media screen and (max-width:640px) {
- .tbl_contact tbody tr td {padding:10px !important}
- .tbl_contact tbody tr td, .tbl_contact tbody tr td font, .tbl_contact tbody tr td span {font-size:12px !important}
- .tbl_contact input, .tbl_contact textarea {font-size:12px !important}
+.colorgraph {
+    height: 5px;
+     border-top: 0;
+     background: #c4e17f;
+     border-radius: 5px;
+     background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+     background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+     background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+     background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
 </style>
 
 <body>
-<div id="wrap">
 
-	<div id="main_container">
-	
-	    <div class="location_bar">
-	   	    <ul>
-	            <li>Home</li>
-	     	    <li class="divider">-</li>
-	     		<li>JOIN</li>
-	     		<li class="divider">-</li>
-	    		<li class="current" style="color:#222222;" >Member Join</li>
-	    	</ul>
-	    </div>	
-	    
-	    <div class="inner"> 
+<!-- 상단 네비 -->
+<section class="menu cid-quZODD7qhs" once="menu" id="menu1-20" data-rv-view="159">
 
-		    <div class="title1">
-		    	 <h2>Welcome</h2>
-		    	 <p>반갑습니다<br />
-		 		         회원이 되시면 더 다양한 혜택을 누릴 수 있습니다</p>
-		    </div>
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-2" href="https://mobirise.com">
+                        MOGACO</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        About Us
+                    </a>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">
+                    <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
+                    Try It Now!
+                </a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/i">build your own website</a></section><section class="mbr-section content5 cid-quZOJE8yVO mbr-parallax-background" id="content5-21" data-rv-view="161">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
+                    ARTICLE HEADER
+                </h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">
+                    Article header with background image and parallax effect
+                </h3>
+            </div>
+        </div>
+    </div>
     
-    		<div class="title2">
-		    	 <h2>안녕하세요. 모각코 알파팀 입니다.</h2>
-		    	 <p style="color:#242424;">저희는 여자개발자모임의 모각코 알파팁 입니다.<br />
-		 		         매주 토요일 10시에 만나 각자 코딩을 하는 시간을 갖습니다.<br />
-		 		        저희와 뜻을 함께할 분들은 언제든 연락 주십시오.호호호호홍 홍홍</p>
-		    </div>
-		    
-		    <!-- 가입 폼 -->
-		    <div style="margin-top:30px;">
-				<form id='com_formmail' name='com_formmail' method="post" action='member/memberJoin.do' >
-					<table border='0' cellspacing='0' cellpadding='0' width='100%' bgcolor='#f2f2f2' >
-					    <tr style="background-color:#fafafa;">
-							<td>
-								 <table cellpadding="0" cellspacing="0" class="tbl_contact">
-				 				    <tr>
-				   				        <td colspan="2" class="no-padding">
-				     					       <div class="contact_line"></div>
-				   						</td>
-				  					</tr>
-				  		            <tr height='30'>
-				      					<td width='20%' align='center' class='formmail_title_bgcolor'>
-											<font style='color:#000000;font-size:13px;'>성 함</font>
-										</td>
-										<td width='80%' style='padding-left:10' class='formmail_cell_bgcolor'>
-											<input type='text' class='formmail_border' name='id' maxlength='100' size='50' value="">
-												&nbsp;&nbsp;
-										</td>
-									</tr>
-									<tr height='30'>
-										<td width='20%' align='center' class='formmail_title_bgcolor'>
-											<font style='color:#000000;font-size:13px;'>연락처</font>
-										</td>
-										<td width='80%' style='padding-left:10' class='formmail_cell_bgcolor'>
-											<input type='text' class='formmail_border' name='pw' size='4' maxlength='5' value="" style='width:10%'> - <input type='text' class='formmail_border' name='name' size='5' maxlength='5' value="" style='width:10%'> - <input type='text' class='formmail_border' size='5' maxlength='5' value="" style='width:10%'> 
-										</td>
-									</tr>
-									<tr height='30'>
-										<td width='20%' align='center' class='formmail_title_bgcolor'>
-											<font style='color:#000000;font-size:13px;'>이메일</font>
-										</td>
-										<td width='80%' style='padding-left:10' class='formmail_cell_bgcolor'>
-											<input type='text' class='formmail_border' name='email' size='70' value=""><br>
-										 </td>
-									</tr>
-									<tr height='30'>
-										<td width='20%' align='center' class='formmail_title_bgcolor'>
-											<font style='color:#000000;font-size:13px;'>생년월일</font>
-										</td>
-										<td width='80%' style='padding-left:10' class='formmail_cell_bgcolor'>
-											<input type='text' class='formmail_border' name='address' maxlength='100' size='70' value=''>
-												&nbsp;&nbsp;
-										</td>
-									</tr>
-							        <tr height='30'>
-										<td width='20%' align='center' class='formmail_title_bgcolor'>
-											<font style='color:#000000;font-size:13px;'>자기소개</font>
-										</td>
-										<td width='80%' style='padding-left:10' class='formmail_cell_bgcolor'>
-											<textarea class='formmail_textarea_style' cols='52' name='gender' style='height:300px;'></textarea><br>
-										</td>
-									</tr> 
-									<tr>
-				   				        <td colspan="2" class="no-padding">
-				     					       <div class="contact_line"></div>
-				   						</td>
-				  					</tr>
-									
-								</table>
-								
-							    <div align='center'>
-							    	 <input type="button" name="join" id="join" value="회원가입">
-							    	 <button>취소</button>
-							         <!-- <a href="#none;" onclick="com_formmail_formCheck(); return false;"><img src='/cimg/ecshop/confirm.gif' border='0' vspace='7'></a>
-							         <a href='javascript: document.com_formmail.reset();'><img src='/cimg/ecshop/cancel.gif' vspace='7' border='0'></a> -->
-							    </div>
-								     
-								     
-							</td>
-						</tr>
-				    </table>
-				</form>
-			    
-	    
-		    </div>
-	    </div> <!-- inner -->
-	</div> <!-- main_container -->
-</div> <!-- wrap -->
+</section>
+
+
+<!-- 회원가입 컨텐츠  -->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3" style="margin:0 auto;">
+         
+	        <form role="form" id='frm' action='member/memberJoin.do' method="post">
+	          
+	            <h2>Please Sign Up <small>It's free and always will be.</small></h2>
+	            
+	            <hr class="colorgraph">
+	            
+	            <div class="form-group">
+	               <input type="text" name="id" id="id" class="form-control input-lg" placeholder="아이디" tabindex="3">
+	            </div>
+	            
+	            <div class="row">
+	               <div class="col-xs-6 col-sm-6 col-md-6">
+	                  <div class="form-group">
+	                      <input type="text" name="name" id="name" class="form-control input-lg" placeholder="이름" tabindex="1">
+	                  </div>
+	               </div>
+	               <div class="col-xs-6 col-sm-6 col-md-6">
+	                  <div class="form-group">
+	                     <input type="text" name="nickname" id="nickname" class="form-control input-lg" placeholder="닉네임" tabindex="2">
+	                  </div>
+	               </div>
+	            </div>
+
+	            <div class="form-group">
+	               <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+	            </div>
+	           
+	            <div class="row">
+	               <div class="col-xs-6 col-sm-6 col-md-6">
+	                  <div class="form-group">
+	                     <input type="password" name="pw" id="password" class="form-control input-lg" placeholder="password" tabindex="5">
+	                  </div>
+	               </div>
+	               <div class="col-xs-6 col-sm-6 col-md-6">
+	                  <div class="form-group">
+	                     <input type="password" id="password_confirmation" class="form-control input-lg" placeholder="password 2" tabindex="6">
+	                  </div>
+	               </div>
+	            </div>
+	            
+	            <input type="hidden" name="phone" id="phone" class="form-control input-lg" tabindex="5" value="null">
+	            <input type="hidden" name="intro" id="intro" class="form-control input-lg" tabindex="5" value="null">
+	            <input type="hidden" name="pick" id="pick" class="form-control input-lg" tabindex="5" value="null">
+	            
+	            <hr class="colorgraph">
+	           
+	            <div class="row">
+	               <div class="col-xs-6 col-md-6"><input type="submit" id="join" value="sign up" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+	               <div class="col-xs-6 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+	            </div>
+	            
+	        </form>
+        </div>
+    </div>
+</div>
+
+<section class="cid-quZOQI6B2W" id="footer5-22" data-rv-view="164">
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-3">
+                <div class="media-wrap">
+                    <a href="https://mobirise.com/">
+                       <img src="assets/images/logo-white-249x1683.png" alt="Mobirise" title="" media-simple="true">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <p class="mbr-text align-right links mbr-fonts-style display-7">
+                    <a href="#" class="text-black">ABOUT</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-black">TERMS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-black">CAREERS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="text-black">CONTACT</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-md-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2017 Mobirise - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://instagram.com/mobirise" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.behance.net/Mobirise" target="_blank">
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 </body>
 
