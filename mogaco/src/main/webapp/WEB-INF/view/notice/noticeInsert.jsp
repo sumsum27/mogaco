@@ -10,14 +10,51 @@
    <title>Insert title here</title>
 </head>
 
+
+
+
 <script type="text/javascript">
+
 $(document).ready(function(){
+
+	/* 기존 폼 넘기기 */
 	$("#write").click(function(){
 		alert("jquery");
 		$("#frm").submit();
 	});
+	
+	
 });
+
+/* ck 에디터로 넘기기 */ 
+$(function(){
+    
+    CKEDITOR.replace( 'ckeditor', {//해당 이름으로 된 textarea에 에디터를 적용
+        width:'100%',
+        height:'400px',
+        filebrowserImageUploadUrl: 'notice/community/imageUpload' //여기 경로로 파일을 전달하여 업로드 시킨다.
+    });
+     
+     
+    CKEDITOR.on('dialogDefinition', function( ev ){
+        var dialogName = ev.data.name;
+        var dialogDefinition = ev.data.definition;
+      
+        switch (dialogName) {
+            case 'image': //Image Properties dialog
+                //dialogDefinition.removeContents('info');
+                dialogDefinition.removeContents('Link');
+                dialogDefinition.removeContents('advanced');
+                break;
+        }
+    });
+     
+});
+
 </script>
+
+
+
 
 <style>
 .view-btn {
@@ -138,38 +175,16 @@ $(document).ready(function(){
 
 <!-- Page Content -->
 <div class="container" style="max-width: 1050px; margin-top:100px;">
-<!-- 
-	<div>
-		<form action="notice/noticeInsert.do" method="post" id="frm">
-			<select>
-				<option>말머리</option>
-				<option>행사</option>
-				<option>안내</option>
-				<option>행사</option>
-			</select>
-			
-			<input type="text" name="num" value="" placeholder="num">
-			<input type="text" name="date" value="" placeholder="date">
-			<input type="text" name="picture" value="" placeholder="picture">
-			<input type="text" name="id" value="" placeholder="id">
-			
-			<input type="text" name="title" value="" placeholder="제목">
-			<textarea rows="" cols="" name="contents"> 베베베	</textarea>	
-		
-			<input type="button" id="join" value="적근">
-		</form>
-	
-	</div> -->	
+
 
     <!-- Project One -->
     <div class="row" style="margin: 0 auto;">
         
         <div class="col-md-5" style="min-width:900px;">
         
-        	<form action="notice/noticeInsert.do" method="post" id="frm"> 
+        	<!-- <form action="notice/noticeInsert.do" method="post" id="frm">  -->
 	            <h2><input type="text" name="title" value="" placeholder="제목" style="min-width:900px;"></h2>
 	            <hr style="margin-top:10px; margin-bottom:17px;">
-	            <!-- 에디터 넣기 -->
 	            <br>
 	            <div id="noticeView_contents" style="min-height:400px;">
 		           <textarea rows="" cols="" name="contents"> 베베베	</textarea>	  
@@ -180,10 +195,27 @@ $(document).ready(function(){
 				   <input type="text" name="picture" value="" placeholder="picture">
 				   <input type="text" name="id" value="" placeholder="id">
 			       
+			       <!-- ck에디터 -->
+			       <form class="form-horizontal" role="form" id="editorForm" method="post" action="notice/community/imageUpload.do">
+					    <div class="form-group">
+					        <div class="form-group">
+					            <div class="col-lg-12">
+					                <textarea name="ckeditor" id="ckeditor"></textarea>
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <div class="col-lg-12" align="right">
+					                <button type="submit" class="btn btn-default">저장</button>
+					            </div>
+					        </div>
+					    </div>
+					</form>
+
+
 	            </div>
 				<input type="button" id="write" value="등록">
 				<input type="button" id="join" value="목록으로"> <!-- 링크넣기 -->
-			</form>
+			<!-- </form> -->
         </div>
         
         

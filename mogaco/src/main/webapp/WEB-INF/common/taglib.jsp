@@ -31,3 +31,8 @@
 <script src="${pageContext.request.contextPath}/assets/theme/js/script.js"></script>
 <script src="${pageContext.request.contextPath}/assets/mobirise-slider-video/script.js"></script>
 
+<!-- ckeditor -->
+<script type="text/javascript" src="${pageContext.request.contextPath}/ckeditor/ckeditor.js"></script>
+
+
+
