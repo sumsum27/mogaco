@@ -32,6 +32,12 @@ public class NoticeController {
 	@Autowired
 	private NoticeService service;
 	
+	// ckTest
+	@RequestMapping(value="/ckTest.do", method = RequestMethod.GET)
+	public void ckTest(HttpServletRequest req, HttpServletRequest res){
+    	System.out.println("ckTest 페이지 이동");	
+    }
+	
 	// INSERT 
 	@RequestMapping(value="/noticeInsert.do", method = RequestMethod.GET)
 	public void noticeInsert(HttpServletRequest req, HttpServletRequest res){
@@ -46,7 +52,7 @@ public class NoticeController {
 	}	
 	
 	/**
-     * 이미지 업로드
+     * 이미지 업로드 ckeditor
      * @param request
      * @param response
      * @param upload

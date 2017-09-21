@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace = "reviewMapper">
+
+	<insert id = "reviewInsertText">
+		insert into review (date,text) values (#{date},#{text})
+	</insert>
+	
+	<insert id = "reviewInsertImage">
+		insert into review (date,picture) values (#{date},#{picture})
+	</insert>
+
+	<select id = "reviewSelectList"  resultType="com.mogaco.vo.ReviewVO">
+		select * from review order by num desc
+	</select>
+     
+<!-- 	<select id = "reviewSelectView"  resultType="java.util.Map">
+		select * from review where num = #{num}
+	</select>
+     
+  	<update id= "reviewUpdate" >
+    	update review set id=#{id}, title=#{title}, contents=#{contents}, date=#{date}, picture=#{picture} where num = #{num}
+    </update>
+    
+    <delete id= "reviewDelete">
+    	delete from review where num=#{num}
+    </delete> -->
+
+</mapper>

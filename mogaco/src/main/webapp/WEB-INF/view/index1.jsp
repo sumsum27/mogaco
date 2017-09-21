@@ -88,7 +88,7 @@ $(document).ready(function(){
                     </a>
                 </li>                
                 <li class="nav-item" style="margin-left:10px;">
-                    <a class="nav-link link text-white display-4" href="reveiw/review.do">
+                    <a class="nav-link link text-white display-4" href="review/reviewList.do">
                         
                         REVIEW
                     </a>

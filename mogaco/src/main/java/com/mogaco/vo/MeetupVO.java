@@ -2,6 +2,7 @@ package com.mogaco.vo;
 
 public class MeetupVO {
 	
+	private String num;
 	private String date;
 	private String place;
 	private String people;
@@ -9,6 +10,13 @@ public class MeetupVO {
 	private String snack;
 	private String mogacbook;
 	
+	
+	public String getNum() {
+		return num;
+	}
+	public void setNum(String num) {
+		this.num = num;
+	}
 	public String getDate() {
 		return date;
 	}
