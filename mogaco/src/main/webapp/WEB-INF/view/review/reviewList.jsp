@@ -140,7 +140,7 @@
 
 	<c:forEach items="${reviewList}" var="list">
 	
-	<img src="/blog/uploads/cycleInfoImage/${list}" alt="">
+	<img src="${list}" alt="">
             
 	
 	

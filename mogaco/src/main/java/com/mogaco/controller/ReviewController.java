@@ -2,6 +2,8 @@ package com.mogaco.controller;
 
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -55,8 +57,11 @@ public class ReviewController {
 		    System.out.println(mpf.getOriginalFilename() + " uploaded!");
 		    String sPath = "";
 		    try {
-			    sPath = "D:" + File.separator + "MOGACO" + File.separator + map.get("date") + File.separator;
-	            
+			    
+			    sPath = "C:" + File.separator + "Users" + File.separator + "USER" + File.separator + "git" + File.separator 
+			      + "mogaco" + File.separator + "mogaco" + File.separator + "src" + File.separator + "main" + File.separator 
+			      + "webapp" + File.separator + "gallery" + File.separator +  map.get("date") + File.separator;
+	
 			    if(totalLoc != ""){
 			    	totalLoc = totalLoc + ","+ sPath + mpf.getOriginalFilename();			    	
 			    }else{
@@ -90,7 +95,7 @@ public class ReviewController {
 	
 	// LIST
 	@RequestMapping(value="/reviewList.do", method = RequestMethod.GET)
-	public void reviewList(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
+	public void reviewList(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res) throws FileNotFoundException{
 		System.out.println("reviewList 페이지 이동");
 		
 		List<ReviewVO> list = new ArrayList<ReviewVO>();
@@ -98,7 +103,7 @@ public class ReviewController {
 		String fullName = "";
 		List<String> result = new ArrayList<String>();
 		
-		
+		FileInputStream inStream = null;
 		for(int i=0; i < list.size(); i++) {
 		
 			fullName = list.get(i).getPicture();
@@ -107,11 +112,14 @@ public class ReviewController {
 			
 			for(int j = 0; j < fullNameCut.length; j++){
 				System.out.println("fullNameCut Test ::: " + fullNameCut[j]);
-				result.add(fullNameCut[j]);
+//				result.add(fullNameCut[j]);
+				File downloadFile = new File(fullNameCut[j]);
+		        inStream = new FileInputStream(downloadFile);
 			}
 		
 		}
-        model.addAttribute("reviewList", result);
+        model.addAttribute("reviewList", inStream);
+        
     } 
 	
 	// DELETE
